@@ -1,0 +1,39 @@
+
+/* variables */
+
+$bgcolor: #2F3137;
+$fontcolor: #F2EFE9;
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../font/OpenSans-Regular.ttf") format("truetype"),
+    url("../font/OpenSans-Bold.ttf") format("truetype"),
+    url("../font/OpenSans-Italic.ttf") format("truetype"),
+    url("../font/OpenSans-Medium.ttf") format("truetype");
+}
+
+body {
+  margin: 150px 250px;
+  background-color: $bgcolor;
+}
+
+p{
+  font-family: "Open Sans", sans-serif;
+  color: $fontcolor;
+  font-weight: normal;
+  line-height:25px;
+}
+
+.student{
+  @extend p;
+  font-weight: lighter;
+  font-size: medium;
+  margin: 10px;
+}
+
+h1{
+  @extend p;
+  font-size: 2em;
+  font-weight: bold;
+}

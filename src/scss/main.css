@@ -1,0 +1,29 @@
+/* variables */
+@font-face {
+  font-family: "Open Sans";
+  src: url("../font/OpenSans-Regular.ttf") format("truetype"), url("../font/OpenSans-Bold.ttf") format("truetype"), url("../font/OpenSans-Italic.ttf") format("truetype"), url("../font/OpenSans-Medium.ttf") format("truetype");
+}
+body {
+  margin: 150px 250px;
+  background-color: #2F3137;
+}
+
+p, h1, .student {
+  font-family: "Open Sans", sans-serif;
+  color: #F2EFE9;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.student {
+  font-weight: lighter;
+  font-size: medium;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */
