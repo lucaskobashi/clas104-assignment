@@ -8,17 +8,40 @@ body {
   background-color: #2F3137;
 }
 
-p, h1, .student {
+p, h1, ul.menu, .student, a {
   font-family: "Open Sans", sans-serif;
   color: #F2EFE9;
   font-weight: normal;
   line-height: 25px;
 }
 
+a {
+  color: #2F3137;
+  background-color: #F2EFE9;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+a:hover {
+  color: #188FA7;
+}
+
 .student {
   font-weight: lighter;
   font-size: medium;
   margin: 10px;
+}
+
+header {
+  background-color: #F2EFE9;
+}
+
+ul.menu {
+  list-style: none;
+  display: flex;
+}
+
+li.menu {
+  margin-right: 15px;
 }
 
 h1 {

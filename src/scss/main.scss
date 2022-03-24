@@ -3,6 +3,7 @@
 
 $bgcolor: #2F3137;
 $fontcolor: #F2EFE9;
+$menucolor: #188FA7;
 
 @font-face {
   font-family: "Open Sans";
@@ -25,11 +26,37 @@ p{
   line-height:25px;
 }
 
+a{
+  @extend p;
+  color: $bgcolor;
+  background-color: $fontcolor;
+  text-decoration: none;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: $menucolor;
+  }
+}
+
 .student{
   @extend p;
   font-weight: lighter;
   font-size: medium;
   margin: 10px;
+}
+
+header {
+  background-color: $fontcolor;
+}
+
+ul.menu {
+  @extend p;
+  list-style: none;
+  display: flex;
+}
+
+li.menu {
+  margin-right: 15px;
 }
 
 h1{
