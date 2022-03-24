@@ -2,10 +2,10 @@
 
 $("#home").on("click", function(){
     $('#loadProject').empty();
-    $("#loadHome").load("home.html");
+    $("#loadHome").load("/src/home.html");
 });
 
 $("#project").on("click", function(){
     $('#loadHome').empty();
-    $("#loadProject").load("project.html");
+    $("#loadProject").load("/src/project.html");
 });
