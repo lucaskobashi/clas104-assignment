@@ -26,18 +26,6 @@ p{
   line-height:25px;
 }
 
-a{
-  @extend p;
-  color: $bgcolor;
-  background-color: $fontcolor;
-  text-decoration: none;
-  transition: color 0.5s ease;
-
-  &:hover {
-    color: $menucolor;
-  }
-}
-
 .student{
   @extend p;
   font-weight: lighter;
@@ -57,6 +45,20 @@ ul.menu {
 
 li.menu {
   margin-right: 15px;
+}
+
+button{
+  @extend p;
+  border: none;
+  text-decoration: none;
+  color: $bgcolor;
+  background-color: $fontcolor;
+  transition-duration: 0.5s;
+
+  &:hover{
+    color: $fontcolor;
+    background-color: $bgcolor;
+  }
 }
 
 h1{

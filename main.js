@@ -1,11 +1,14 @@
 // JQuery
 
-$("#home").on("click", function(){
-    $('#loadProject').empty();
-    $("#loadHome").load("/src/home.html");
-});
+$(document).ready(function () {
 
-$("#project").on("click", function(){
-    $('#loadHome').empty();
-    $("#loadProject").load("/src/project.html");
+    $("#home").click(function(){
+        $('#loadProject').empty();
+        $("#loadHome").load("/src/home.html");
+    })
+
+    $("#project").click(function(){
+        $('#loadHome').empty();
+        $("#loadProject").load("/src/project.html");
+    })
 });

@@ -8,21 +8,11 @@ body {
   background-color: #2F3137;
 }
 
-p, h1, ul.menu, .student, a {
+p, h1, button, ul.menu, .student {
   font-family: "Open Sans", sans-serif;
   color: #F2EFE9;
   font-weight: normal;
   line-height: 25px;
-}
-
-a {
-  color: #2F3137;
-  background-color: #F2EFE9;
-  text-decoration: none;
-  transition: color 0.5s ease;
-}
-a:hover {
-  color: #188FA7;
 }
 
 .student {
@@ -42,6 +32,18 @@ ul.menu {
 
 li.menu {
   margin-right: 15px;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  color: #2F3137;
+  background-color: #F2EFE9;
+  transition-duration: 0.5s;
+}
+button:hover {
+  color: #F2EFE9;
+  background-color: #2F3137;
 }
 
 h1 {
